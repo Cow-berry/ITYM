@@ -1,0 +1,175 @@
+\documentclass[12pt,a4paper, flushleft]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[T2A]{fontenc}
+\usepackage[russian, english]{babel}
+\usepackage{mathrsfs, dsfont} % специальные шрифты, по типу \mathscr или \dsfont
+\usepackage{comment} %для многострочных комментариев
+\usepackage{xcolor} %для гиперссылок в тексте и их цвета
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{multicol}
+\graphicspath{/home/cowberry/Documents/10M/SPTYM/pics/}
+\usepackage[left=1cm,right=1cm,top=2cm,bottom=2cm]{geometry}	
+\usepackage[most]{tcolorbox}
+\definecolor{block-gray}{gray}{0.90} % уровень прозрачности (1 - максимум)
+\newtcolorbox{myquote}{colback=block-gray,grow to right by=-25mm,grow to left by=-25mm, boxrule=1pt,boxsep=0pt,breakable}
+\author{Anatoly Kochenyuk, $\langle team~name\rangle$}
+\date{July 2019}
+\newcommand{\horline}[1]{
+		\begin{center}
+			\begin{picture}(#1, 2)
+				\line(1,0){#1}%
+			\end{picture}
+		\end{center}
+	}
+\title{
+	\vspace{4cm}	
+	\horline{440}	
+	\begin{center}
+		\begin{Huge}
+			\textbf{\emph{Problem 2. A Graph Coloring Game}}
+		\end{Huge}
+	\end{center}	
+	\vspace{-1.3cm}	
+	\horline{460}
+	%\includegraphics[scale=0.15]{abgrx.png}
+}
+\newtheorem{Def}{Definition}[section]
+\newtheorem{Th}{Theorem}[section]
+\newtheorem{Lm}{Lemma}[section] 
+\newtheorem{Pb}{Problem}[section]
+\newtheorem{St}{Statement}[section]
+\newtheorem{Sl}{consequence}[section]
+\newtheorem{Zm}{Note}[section]
+\newtheorem{Con}{Condition}[section]
+\usepackage{relsize}
+\newcommand{\vel}{\mathlarger{\mathlarger{\upsilon}}}
+\newcommand{\der}[1]{\overset{\cdot}{#1}}
+\newcommand{\dder}[1]{\overset{\cdot \cdot}{#1}}
+\newcommand{\Lim}[2]{\lim\limits_{#1\to #2}}
+\newcommand{\Ch}[1]{\overset{#1}{=}}
+\newcommand{\p}[1]{#1^{\prime}}
+\newcommand{\pp}[1]{#1^{\prime\prime}}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\oll}[1]{\overline{\overline{#1}}}
+\newcommand{\ov}[2]{\overset{#1}{#2}}
+\newcommand{\un}[1]{\underline{#1}}
+\newcommand{\gr}[2]{\includegraphics[scale=#1]{../pics/#2}}
+\newcommand{\lr}[1]{\langle #1 \rangle}
+\usepackage{comment}
+
+\begin{document}
+\maketitle
+\vspace{4cm}
+	
+	\begin{myquote}
+	\begin{center}
+		\textbf{Annotation}\\
+		\textit{
+			$\lr{annotation~text}$
+		}
+	\end{center}
+	\end{myquote}	
+	
+	\pagebreak
+
+	\tableofcontents	
+	
+	\pagebreak
+	
+\section*{Introduction}
+The main point of this problem is game theory.
+
+In this case, game is played on an undirected graph with all vertices colored in white. Two payers, Bob and Riley, make alternating moves starting with Bob. On his first move, each player chooses
+any white vertex and colors it in his favourite color. On each consequent move, each player picks
+a white vertex connected with an edge to a vertex of his color (if there is no such vertex, the
+player skips his move). Then he colors it in his color. The game finishes when no white vertices
+remain.
+
+\begin{Def}
+	$G$ is an undirected Graph
+
+	Let $B(G)$ be the maximal number of blue vertices, which Bob can guarantee at the end of
+the game.
+
+	Let $R(G)$ be the maximal number of red vertices, which Riley can guarantee at the
+end of the game.
+\end{Def}
+
+\begin{Def}
+	$M_B(n) = \min\limits_{G\in S(n)}B(G)\quad S(n)$ -- set of all simple undirected connected graphs with n vertices.
+\end{Def}
+
+\begin{Def}
+	$|G|$, where $G$ is undirected graph, equals the amount of vertices in $G$
+\end{Def}
+
+\section{}
+Describe the optimal strategy for Bob and evaluate $B(G)$ where:
+\begin{enumerate}
+	\item[a)] $G$ is a tree. Let's define weight for each vertex as following:
+	
+	\begin{Def}
+		Let $S$ be a set of maximal connected subtrees that don't include the vertex $v \in G$, where G is an undirected tree.
+		
+		Weight of vertex $v$ is $w_v = \min\limits_{s\in S}|s|$
+	\end{Def}
+	
+	Now, let's take a look at Bob's first move. By choosing one vertex to color, he divides the tree into several subtrees. For Riley it's only possible to color one of these subtrees, because once he chooses one of these subtrees he can't 'move' to another one, because it's a tree and the only way goes through the vertex chosen by Bob. 
+	
+	So Riley chooses the subtree with the maximal amount of vertices. And all the other subtrees goes to Bob.
+	
+	Thus, for Bob, it's beneficial to choose the vertex with the least weight for first move. 
+	
+	Because Riley 'takes' the subtree with the maximal amount of vertices, $$B(G) = |G| - \max\limits_{s\in S}|s|$$
+	
+	where S is the set of maximal connected subtrees that don't include the vertex chosen by Bob 
+	\item[b)] 
+\end{enumerate}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
