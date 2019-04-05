@@ -46,6 +46,8 @@
 \newtheorem{Zm}{Note}[section]
 \newtheorem{Con}{Condition}[section]
 \usepackage{relsize}
+\usepackage{array}   % for \newcolumntype macro
+\newcolumntype{C}{>{$}c<{$}} 
 \newcommand{\vel}{\mathlarger{\mathlarger{\upsilon}}}
 \newcommand{\der}[1]{\overset{\cdot}{#1}}
 \newcommand{\dder}[1]{\overset{\cdot \cdot}{#1}}
@@ -57,9 +59,13 @@
 \newcommand{\oll}[1]{\overline{\overline{#1}}}
 \newcommand{\ov}[2]{\overset{#1}{#2}}
 \newcommand{\un}[1]{\underline{#1}}
-\newcommand{\gr}[2]{\includegraphics[scale=#1]{../pics/#2}}
+\newcommand{\gr}[1]{\includegraphics[scale=0.2]{../pics/#1}}
 \newcommand{\lr}[1]{\langle #1 \rangle}
 \usepackage{comment}
+\let\oldrightarrow\rightarrow
+\renewcommand{\rightarrow}{%
+  \mathrel{\raisebox{14pt}{$\oldrightarrow$}}%
+}
 
 \begin{document}
 \maketitle
@@ -127,7 +133,22 @@ Describe the optimal strategy for Bob and evaluate $B(G)$ where:
 	Because Riley 'takes' the subtree with the maximal amount of vertices, $$B(G) = |G| - \max\limits_{s\in S}|s|$$
 	
 	where S is the set of maximal connected subtrees that don't include the vertex chosen by Bob 
-	\item[b)] 
+	\item[b)] $G$ is a grid $M\times K$. Let $M\leqslant K$. Then let'a take a look at two different case:
+	\begin{itemize}
+		\item K is even. Then we can split the grid into two equal parts the following way:\\
+		\begin{tabular}{CCCCCC}
+			\gr{grid1} & \rightarrow & \gr{grid2} & \rightarrow & \gr{grid3} & \rightarrow\\
+			\gr{grid4}& \rightarrow & \gr{grid5}	
+		\end{tabular}		
+		
+		\begin{Def}
+			Let center line be a line that is places in-between two edges of the grid, e.g. the following grid has four of them: both horizontal and highlighted vertical.
+			
+			\gr{grid4}
+		\end{Def}		
+		
+		Here appears invisible line splitting the grid in half. Bob's first move must be some vertex on a center line.
+	\end{itemize}
 \end{enumerate}
 \end{document}
 

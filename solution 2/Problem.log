@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.26)  3 APR 2019 18:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.26)  6 APR 2019 02:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1467,6 +1467,14 @@ Library (tcolorbox): 'tcbposter.code.tex' version '4.12'
  (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen278
+\extrarowheight=\dimen279
+\NC@list=\toks45
+\extratabsurround=\skip58
+\backup@length=\skip59
+)
 
 LaTeX Warning: Unused global option(s):
     [flushleft].
@@ -1474,38 +1482,38 @@ LaTeX Warning: Unused global option(s):
 (./Problem.aux)
 \openout1 = `Problem.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count324
-\scratchdimen=\dimen278
+\scratchdimen=\dimen280
 \scratchbox=\box96
 \nofMPsegments=\count325
 \nofMParguments=\count326
-\everyMPshowfont=\toks45
+\everyMPshowfont=\toks46
 \MPscratchCnt=\count327
-\MPscratchDim=\dimen279
+\MPscratchDim=\dimen281
 \MPnumerator=\count328
 \makeMPintoPDFobject=\count329
-\everyMPtoPDFconversion=\toks46
+\everyMPtoPDFconversion=\toks47
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1524,7 +1532,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box97
-Package hyperref Info: Link coloring OFF on input line 64.
+Package hyperref Info: Link coloring OFF on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1534,9 +1542,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count330
 )
-LaTeX Info: Redefining \ref on input line 64.
-LaTeX Info: Redefining \pageref on input line 64.
-LaTeX Info: Redefining \nameref on input line 64.
+LaTeX Info: Redefining \ref on input line 70.
+LaTeX Info: Redefining \pageref on input line 70.
+LaTeX Info: Redefining \nameref on input line 70.
 
 (./Problem.out) (./Problem.out)
 \@outlinefile=\write7
@@ -1579,17 +1587,17 @@ LaTeX Info: Redefining \nameref on input line 64.
 
 ABD: EveryShipout initializing macros
 \c@lstlisting=\count331
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 72.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 72.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 66.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 72.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1599,39 +1607,79 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \tf@toc=\write8
 \openout8 = `Problem.toc'.
 
- [2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
+ [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 138.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 138.
+<../pics/grid1.png, id=65, 626.34pt x 171.64125pt>
+File: ../pics/grid1.png Graphic file (type png)
+<use ../pics/grid1.png>
+Package pdftex.def Info: ../pics/grid1.png  used on input line 140.
+(pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
+<../pics/grid2.png, id=67, 626.34pt x 171.64125pt>
+File: ../pics/grid2.png Graphic file (type png)
+<use ../pics/grid2.png>
+Package pdftex.def Info: ../pics/grid2.png  used on input line 140.
+(pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
+<../pics/grid3.png, id=68, 626.34pt x 171.64125pt>
+File: ../pics/grid3.png Graphic file (type png)
+<use ../pics/grid3.png>
+Package pdftex.def Info: ../pics/grid3.png  used on input line 140.
+(pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
+<../pics/grid4.png, id=69, 626.34pt x 171.64125pt>
+File: ../pics/grid4.png Graphic file (type png)
+<use ../pics/grid4.png>
+Package pdftex.def Info: ../pics/grid4.png  used on input line 141.
+(pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
+<../pics/grid5.png, id=70, 626.34pt x 171.64125pt>
+File: ../pics/grid5.png Graphic file (type png)
+<use ../pics/grid5.png>
+Package pdftex.def Info: ../pics/grid5.png  used on input line 141.
+(pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
+File: ../pics/grid4.png Graphic file (type png)
+<use ../pics/grid4.png>
+Package pdftex.def Info: ../pics/grid4.png  used on input line 147.
+(pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
+ [3 <../pics/grid1.png> <../pics/grid2.png> <../pics/grid3.png> <../pics/grid4.
+png> <../pics/grid5.png>] [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
  (./Problem.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
 Package rerunfilecheck Info: File `Problem.out' has not changed.
 (rerunfilecheck)             Checksum: 9534070C232AA0A3F935CB7C3E3F8D46;35.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 35854 strings out of 492982
- 687143 string characters out of 6134895
- 861960 words of memory out of 5000000
- 38941 multiletter control sequences out of 15000+600000
+ 35968 strings out of 492982
+ 688671 string characters out of 6134895
+ 864722 words of memory out of 5000000
+ 39017 multiletter control sequences out of 15000+600000
  546753 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,7n,101p,10567b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,12n,101p,10567b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi2488.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on Problem.pdf (3 pages, 164246 bytes).
+msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi2488.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on Problem.pdf (4 pages, 241988 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 165 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 144 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
