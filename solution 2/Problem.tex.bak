@@ -142,10 +142,16 @@ Describe the optimal strategy for Bob and evaluate $B(G)$ where:
 		\end{tabular}		
 		
 		\begin{Def}
-			Let center line --
+			Let center line be a line that is places in-between two edges of the grid, e.g. the following grid has four of them: both horizontal and highlighted vertical.
+			
+			\gr{grid4}
 		\end{Def}		
 		
-		Here appears invisible line splitting the grid in half. Bob's first move must be some vertex on a 'center line', i.e. line that is in-between two edges of the grid.
+		Here appears invisible line splitting the grid in half. Bob's first move must be some vertex on a center line, because either way Riley can border the grid like shown on the next pictures:
+		
+		\begin{tabular}{CCCCCC}
+			\gr{grid1} & \rightarrow & \gr{grid2.1} & \rightarrow & \gr{grid2.}
+		\end{tabular}
 	\end{itemize}
 \end{enumerate}
 \end{document}

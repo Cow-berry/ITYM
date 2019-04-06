@@ -19,16 +19,16 @@ void grid(int n, int m){
     }
 }
 
-vertex(0, 0, blue);
-vertex(0, 1, blue);
+vertex(0, 0, white);
+vertex(0, 1, white);
 vertex(1, 0, blue);
 vertex(1, 1, blue);
-vertex(2, 0, blue);
-vertex(2, 1, blue);
-vertex(3, 0, red);
-vertex(3, 1, red);
-vertex(4, 0, red);
-vertex(4, 1, red);
-vertex(5, 0, red);
-vertex(5, 1, red);
+vertex(2, 0, red);
+vertex(2, 1, red);
+vertex(3, 0, white);
+vertex(3, 1, white);
+vertex(4, 0, white);
+vertex(4, 1, white);
+vertex(5, 0, white);
+vertex(5, 1, white);
 grid(6, 2);
