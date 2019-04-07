@@ -121,7 +121,7 @@ Describe the optimal strategy for Bob and evaluate $B(G)$ where:
 	\begin{Def}
 		Let $S$ be a set of maximal connected subtrees that don't include the vertex $v \in G$, where G is an undirected tree.
 		
-		Weight of vertex $v$ is $w_v = \min\limits_{s\in S}|s|$
+		Weight of vertex $v$ is $w_v = \max\limits_{s\in S}|s|$
 	\end{Def}
 	
 	Now, let's take a look at Bob's first move. By choosing one vertex to color, he divides the tree into several subtrees. For Riley it's only possible to color one of these subtrees, because once he chooses one of these subtrees he can't 'move' to another one, because it's a tree and the only way goes through the vertex chosen by Bob. 
@@ -142,7 +142,7 @@ Describe the optimal strategy for Bob and evaluate $B(G)$ where:
 		\end{tabular}		
 		
 		\begin{Def}
-			Let center line be a line that is places in-between two edges of the grid, e.g. the following grid has four of them: both horizontal and highlighted vertical.
+			Let \textbf{center line} be a shortest line that is places in-between two edges of the grid, e.g. the following grid has two of them (highlighted vertical lines). 
 			
 			\gr{grid4}
 		\end{Def}		
@@ -150,8 +150,14 @@ Describe the optimal strategy for Bob and evaluate $B(G)$ where:
 		Here appears invisible line splitting the grid in half. Bob's first move must be some vertex on a center line, because either way Riley can border the grid like shown on the next pictures:
 		
 		\begin{tabular}{CCCCCC}
-			\gr{grid1} & \rightarrow & \gr{grid2.1} & \rightarrow & \gr{grid2.}
+			\gr{grid1} & \rightarrow & \gr{grid2_1} & \rightarrow & \gr{grid2_2.png} & \rightarrow\\
+			\gr{grid2_3}
 		\end{tabular}
+		
+		horizontal lines int the previous example could be center lines, but first move on them does not guarantee an optimal amount of blue vertices.
+		
+		Therefore, in this case $B(G) = min(M, K) \cdot \frac{max(M, K)}{2}$, where $max(M, K)$ is even
+		\item K is odd.
 	\end{itemize}
 \end{enumerate}
 \end{document}
