@@ -61,6 +61,8 @@
 \newcommand{\un}[1]{\underline{#1}}
 \newcommand{\gr}[1]{\includegraphics[scale=0.2]{../pics/#1}}
 \newcommand{\lr}[1]{\langle #1 \rangle}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 \usepackage{comment}
 \let\oldrightarrow\rightarrow
 \renewcommand{\rightarrow}{%
@@ -110,7 +112,7 @@ end of the game.
 \end{Def}
 
 \begin{Def}
-	$|G|$, where $G$ is undirected graph, equals the amount of vertices in $G$
+	$|G|$, where $G$ is undirected graph, equals the number of vertices in $G$
 \end{Def}
 
 \section{}
@@ -119,21 +121,20 @@ Describe the optimal strategy for Bob and evaluate $B(G)$ where:
 	\item[a)] $G$ is a tree. Let's define weight for each vertex as following:
 	
 	\begin{Def}
-		Let $S$ be a set of maximal connected subtrees that don't include the vertex $v \in G$, where G is an undirected tree.
+		Let $S_v$ be a set of trees that was produced by removing vertex $v\in G$ off the tree
 		
 		Weight of vertex $v$ is $w_v = \max\limits_{s\in S}|s|$
 	\end{Def}
 	
 	Now, let's take a look at Bob's first move. By choosing one vertex to color, he divides the tree into several subtrees. For Riley it's only possible to color one of these subtrees, because once he chooses one of these subtrees he can't 'move' to another one, because it's a tree and the only way goes through the vertex chosen by Bob. 
 	
-	So Riley chooses the subtree with the maximal amount of vertices. And all the other subtrees goes to Bob.
+	So Riley chooses the subtree with the maximal number of vertices. And all the other subtrees goes to Bob.
 	
 	Thus, for Bob, it's beneficial to choose the vertex with the least weight for first move. 
 	
-	Because Riley 'takes' the subtree with the maximal amount of vertices, $$B(G) = |G| - \max\limits_{s\in S}|s|$$
+	Because Riley 'takes' the subtree with the maximal number of vertices, $$B(G) = |G| - \min\limits_{v\in G} w_v$$
 	
-	where S is the set of maximal connected subtrees that don't include the vertex chosen by Bob 
-	\item[b)] $G$ is a grid $M\times K$. Let $M\leqslant K$. Then let'a take a look at two different case:
+	\item[b)] $G$ is a grid $M\times K$. Let $M\leqslant K$. Then let's take a look at two different case:
 	\begin{itemize}
 		\item K is even. Then we can split the grid into two equal parts the following way:\\
 		\begin{tabular}{CCCCCC}
@@ -154,10 +155,33 @@ Describe the optimal strategy for Bob and evaluate $B(G)$ where:
 			\gr{grid2_3}
 		\end{tabular}
 		
-		horizontal lines int the previous example could be center lines, but first move on them does not guarantee an optimal amount of blue vertices.
+		horizontal lines in the previous example could be center lines, but first move on them does not guarantee an optimal number of blue vertices.
 		
-		Therefore, in this case $B(G) = min(M, K) \cdot \frac{max(M, K)}{2}$, where $max(M, K)$ is even
+		Therefore, in this case $B(G) = min(M, K) \cdot \dfrac{max(M, K)}{2}$, where $max(M, K)$ is even
 		\item K is odd.
+		
+		\begin{itemize}
+			\item M is odd. Then there's a center vertex. Bob's first move must be this vertex, i'll explain later why. We can draw four lines that border the grid into parts that include the vertex and the parts that 
+don't.
+
+			\gr{b} \hfill \gr{b2}
+
+			By acting symmetrically Riley can border one of these areas. We know that $M~and~K$ are odd, then $\exists m, k: M = 2m+1\quad K = 2k+1$. Areas of the areas are $(2m+1)\cdot (k+1) ~~\&~~ (2k+1)\cdot (m+1)$, i.e. $2mk+k + 2m + 1~~\&~~ 2mk + m + 2k + 1$. $M\leqslant K\Rightarrow m\leqslant k\Rightarrow 2mk + m\leqslant 2m+k$, so Riley will choose to take one of  $2mk + k$ areas.
+			
+			if first Bob's move was not the central vertex, then several areas would expand, increasing the gain of Riley.
+			
+			Therefore $B(G) = |G| - min(M, K)\cdot \floor{\dfrac{max(M, K)}{2}}$
+			
+			\item M is even. Then there's a single center line. Bob's first move must be on this center line.
+			
+			\gr{b3}
+			
+			And after his move Riley can make his moves symmetrically, taking the other half.
+			
+			If bob's first move was somewhere not on the center line, then Riley could border the grid so that he gets most of area.
+			
+			Therefore $B(G) = |G| - \dfrac{min(M, K)}{2}\cdot max(M, K) = min()$
+		\end{itemize}
 	\end{itemize}
 \end{enumerate}
 \end{document}
