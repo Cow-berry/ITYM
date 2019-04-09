@@ -166,11 +166,17 @@ don't.
 
 			\gr{b} \hfill \gr{b2}
 
-			By acting symmetrically Riley can border one of these areas. We know that $M~and~K$ are odd, then $\exists m, k: M = 2m+1\quad K = 2k+1$. Areas of the areas are $(2m+1)\cdot (k+1) ~~\&~~ (2k+1)\cdot (m+1)$, i.e. $2mk+k + 2m + 1~~\&~~ 2mk + m + 2k + 1$. $M\leqslant K\Rightarrow m\leqslant k\Rightarrow 2mk + m\leqslant 2m+k$, so Riley will choose to take one of  $2mk + k$ areas.
+			By acting symmetrically Riley can border one of these areas. We know that $M~and~K$ are odd, then $\exists m, k: M = 2m+1\quad K = 2k+1$. 
+			
+			Areas of the areas are $(2m+1)\cdot (k+1) ~~\&~~ (2k+1)\cdot (m+1)$, i.e. $2mk+k + 2m + 1~~\&~~ 2mk + m + 2k + 1$. 
+			
+			$M\leqslant K\Rightarrow m\leqslant k\Rightarrow m + 2mk + m + k + 1\leqslant  k + 2mk + m + k\Rightarrow $
+			
+			$\Rightarrow (2m+1)(k+1)\leqslant (2k+1)(m+1)$, so Riley will choose to take one of  $2mk + k$ areas. %TODO rewrite  with right calculations
 			
 			if first Bob's move was not the central vertex, then several areas would expand, increasing the gain of Riley.
 			
-			Therefore $B(G) = |G| - min(M, K)\cdot \floor{\dfrac{max(M, K)}{2}}$
+			Therefore $B(G) = min(M, K)\cdot \ceil{\dfrac{max(M, K)}{2}}$
 			
 			\item M is even. Then there's a single center line. Bob's first move must be on this center line.
 			
