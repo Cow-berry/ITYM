@@ -115,10 +115,9 @@ end of the game.
 	$|G|$, where $G$ is undirected graph, equals the number of vertices in $G$
 \end{Def}
 
-\section{}
-Describe the optimal strategy for Bob and evaluate $B(G)$ where:
-\begin{enumerate}
-	\item[a)] $G$ is a tree. Let's define weight for each vertex as following:
+\section{Describe the optimal strategy for Bob and evaluate $B(G)$ where:}
+
+\subsection{Tree} $G$ is a tree. Let's define weight for each vertex as following:
 	
 	\begin{Def}
 		Let $S_v$ be a set of trees that was produced by removing vertex $v\in G$ off the tree
@@ -134,7 +133,7 @@ Describe the optimal strategy for Bob and evaluate $B(G)$ where:
 	
 	Because Riley 'takes' the subtree with the maximal number of vertices, $$B(G) = |G| - \min\limits_{v\in G} w_v$$
 	
-	\item[b)] $G$ is a grid $M\times K$. Let $M\leqslant K$. Then let's take a look at two different case:
+\subsection{Grid} $G$ is a grid $M\times K$. Let $M\leqslant K$. Then let's take a look at two different case:
 	\begin{itemize}
 		\item K is even. Then we can split the grid into two equal parts the following way:\\
 		\begin{tabular}{CCCCCC}
@@ -172,7 +171,7 @@ don't.
 			
 			$M\leqslant K\Rightarrow m\leqslant k\Rightarrow m + 2mk + m + k + 1\leqslant  k + 2mk + m + k\Rightarrow $
 			
-			$\Rightarrow (2m+1)(k+1)\leqslant (2k+1)(m+1)$, so Riley will choose to take one of  $2mk + k$ areas. %TODO rewrite  with right calculations
+			$\Rightarrow (2m+1)(k+1)\leqslant (2k+1)(m+1)$, so Riley will choose to take one of  $2mk + k$ areas. 
 			
 			if first Bob's move was not the central vertex, then several areas would expand, increasing the gain of Riley.
 			
@@ -186,10 +185,37 @@ don't.
 			
 			If bob's first move was somewhere not on the center line, then Riley could border the grid so that he gets most of area.
 			
-			Therefore $B(G) = |G| - \dfrac{min(M, K)}{2}\cdot max(M, K) = min()$
+			Therefore $B(G) = \ceil{\dfrac{min(M, K)}{2}}\cdot max(M, K),$ where $min(M, K)$ is even.
 		\end{itemize}
 	\end{itemize}
-\end{enumerate}
+	
+	
+	
+	Let's sum it up using the fact that $M,\leqslant K$ and make some inequalities:
+	\begin{itemize}
+		\item $K$ is even $\quad B(G) = M \cdot \ceil{\dfrac{K}{2}} = M\cdot \dfrac{K}{2}  = \dfrac{M}{2}\cdot K\leqslant \ceil{\dfrac{M}{2}}\cdot K$
+		\item $K$ is odd:
+		\begin{itemize}
+			\item $M$ is even $\quad B(G) = \ceil{\dfrac{M}{2}}\cdot K = \dfrac{M}{2}\cdot K = M\cdot \dfrac{K}{2}\leqslant M\cdot \ceil{\dfrac{K}{2}}$	
+			\item $M$ is odd $\quad B(G) = M\cdot \ceil{\dfrac{K}{2}}\leqslant \ceil{\dfrac{M}{2}}\cdot K$
+			\begin{proof}
+				$M, K$ are odd $\Rightarrow \begin{cases} M = 2m+1 & \ceil{\dfrac{M}{2}} = m+1\\K = 2k+1& \ceil{\dfrac{K}{2}} = k+1\\ \end{cases}\quad M\leqslant K\Rightarrow m\leqslant k$
+				
+				$m\leqslant k\Rightarrow 2mk + k + 2m + 1\leqslant 2mk + 2k + m + 1\Rightarrow (2m+1)(k+1)\leqslant (m+1)(2k+1) \Rightarrow M\ceil{\dfrac{K}{2}}\leqslant \ceil{\dfrac{M}{2}}\cdot K$
+			\end{proof}
+		\end{itemize}		 
+	\end{itemize}
+	
+	We can conclude, that $B(G) = min\left( \ceil{\dfrac{M}{2}}\cdot K~M\cdot \ceil{\dfrac{K}{2}}\right)$
+	
+\subsection{Torus Grid}
+
+Since all vertices on a blank torus grid are completely identical Bob can start his game with any vertex.
+
+Let's consider the same cases. Suppose that $G$ is a torus grid $M\times K$, where $M\leqslant K$:
+\begin{itemize}
+	\item $K$ is even
+\end{itemize}  
 \end{document}
 
 
