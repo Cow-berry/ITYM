@@ -19,34 +19,9 @@ void grid(int n, int m){
     }
 }
 
-vertex(0, 0, white);
-vertex(0, 1, white);
-vertex(0, 2, white);
-vertex(0, 3, white);
-vertex(1, 0, white);
-vertex(1, 1, white);
-vertex(1, 2, white);
-vertex(1, 3, white);
-vertex(2, 0, white);
-vertex(2, 1, white);
-vertex(2, 2, white);
-vertex(2, 3, white);
-vertex(3, 0, paleblue);
-vertex(3, 1, paleblue);
-vertex(3, 2, blue);
-vertex(3, 3, paleblue);
-vertex(4, 0, white);
-vertex(4, 1, white);
-vertex(4, 2, white);
-vertex(4, 3, white);
-vertex(5, 0, white);
-vertex(5, 1, white);
-vertex(5, 2, white);
-vertex(5, 3, white);
-vertex(6, 0, white);
-vertex(6, 1, white);
-vertex(6, 2, white);
-vertex(6, 3, white);
-grid(7, 4);
-
-draw((-1, 3) -- (15, 3), linewidth(2) + green);
+vertex(0, 0, red);
+vertex(0, 1, red);
+vertex(0, 2, blue);
+vertex(0, 3, blue);
+vertex(0, 4, blue);
+grid(1, 5);

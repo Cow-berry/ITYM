@@ -216,6 +216,22 @@ Let's consider the same cases. Suppose that $G$ is a torus grid $M\times K$, whe
 \begin{itemize}
 	\item $K$ is even
 \end{itemize}  
+
+\section{Upper and lower bounds for $M	_B(n)$}
+
+Let's first consider $1\leqslant n\leqslant 6:$
+
+\begin{tabular}{CCCCCC}
+	\gr{2}&\gr{2_2}&\gr{2_3}&\gr{2_4}&&\\
+\end{tabular}
+\begin{enumerate}
+	\item [$n=1$] there's only one 1-vertexed graph and $B(G) = 1$, so $M_B(n) = 1$
+	\item [$n=2$] $M_B(n) = 1$
+	\item [$n=3$] $M_B(G) = 2$. if all vertices are connected, then Bob can color any vertex for first move. Riley choose any of the left ones and Bob colors third one. In cases where two vertices are not linked there's a center vertex for Bob's first move and Riley can get only one of the remaining. And finally bob colors another one. So $B(G) = 2$ for all cases.
+	\item [$n=4$] $M_B(G) = 2$. You can't make $B(G)$ be 1, because always exists vertex with two connections. Riley can 'block' one but not all two, so $B(G)\geqslant 2\Rightarrow M_B(n) = 2$
+	\item [$n=5$] $M_B(G) = 3$.  
+\end{enumerate}
+
 \end{document}
 
 
