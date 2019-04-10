@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.26)  10 APR 2019 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.26)  10 APR 2019 23:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1482,24 +1482,24 @@ LaTeX Warning: Unused global option(s):
 (./Problem.aux)
 \openout1 = `Problem.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1532,7 +1532,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box97
-Package hyperref Info: Link coloring OFF on input line 72.
+Package hyperref Info: Link coloring OFF on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1542,9 +1542,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count330
 )
-LaTeX Info: Redefining \ref on input line 72.
-LaTeX Info: Redefining \pageref on input line 72.
-LaTeX Info: Redefining \nameref on input line 72.
+LaTeX Info: Redefining \ref on input line 73.
+LaTeX Info: Redefining \pageref on input line 73.
+LaTeX Info: Redefining \nameref on input line 73.
 
 (./Problem.out) (./Problem.out)
 \@outlinefile=\write7
@@ -1587,17 +1587,17 @@ LaTeX Info: Redefining \nameref on input line 72.
 
 ABD: EveryShipout initializing macros
 \c@lstlisting=\count331
-LaTeX Font Info:    Try loading font information for U+msa on input line 74.
+LaTeX Font Info:    Try loading font information for U+msa on input line 75.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 74.
+LaTeX Font Info:    Try loading font information for U+msb on input line 75.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 74.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 75.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1610,139 +1610,203 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
  [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 118.
+(hyperref)                removing `math shift' on input line 119.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 118.
+(hyperref)                removing `math shift' on input line 119.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 138.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 139.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 138.
-<../pics/grid1.png, id=87, 626.34pt x 171.64125pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 139.
+<../pics/grid1.png, id=103, 626.34pt x 171.64125pt>
 File: ../pics/grid1.png Graphic file (type png)
 <use ../pics/grid1.png>
-Package pdftex.def Info: ../pics/grid1.png  used on input line 140.
+Package pdftex.def Info: ../pics/grid1.png  used on input line 141.
 (pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
-<../pics/grid2.png, id=89, 626.34pt x 171.64125pt>
+<../pics/grid2.png, id=105, 626.34pt x 171.64125pt>
 File: ../pics/grid2.png Graphic file (type png)
 <use ../pics/grid2.png>
-Package pdftex.def Info: ../pics/grid2.png  used on input line 140.
+Package pdftex.def Info: ../pics/grid2.png  used on input line 141.
 (pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
-<../pics/grid3.png, id=90, 626.34pt x 171.64125pt>
+<../pics/grid3.png, id=106, 626.34pt x 171.64125pt>
 File: ../pics/grid3.png Graphic file (type png)
 <use ../pics/grid3.png>
-Package pdftex.def Info: ../pics/grid3.png  used on input line 140.
+Package pdftex.def Info: ../pics/grid3.png  used on input line 141.
 (pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
-<../pics/grid4.png, id=91, 626.34pt x 171.64125pt>
+<../pics/grid4.png, id=107, 626.34pt x 171.64125pt>
 File: ../pics/grid4.png Graphic file (type png)
 <use ../pics/grid4.png>
-Package pdftex.def Info: ../pics/grid4.png  used on input line 141.
+Package pdftex.def Info: ../pics/grid4.png  used on input line 142.
 (pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
-<../pics/grid5.png, id=92, 626.34pt x 171.64125pt>
+<../pics/grid5.png, id=108, 626.34pt x 171.64125pt>
 File: ../pics/grid5.png Graphic file (type png)
 <use ../pics/grid5.png>
-Package pdftex.def Info: ../pics/grid5.png  used on input line 141.
+Package pdftex.def Info: ../pics/grid5.png  used on input line 142.
 (pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
 File: ../pics/grid4.png Graphic file (type png)
 <use ../pics/grid4.png>
-Package pdftex.def Info: ../pics/grid4.png  used on input line 147.
+Package pdftex.def Info: ../pics/grid4.png  used on input line 148.
 (pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
  [3 <../pics/grid1.png> <../pics/grid2.png> <../pics/grid3.png> <../pics/grid4.
 png> <../pics/grid5.png>]
 File: ../pics/grid1.png Graphic file (type png)
 <use ../pics/grid1.png>
-Package pdftex.def Info: ../pics/grid1.png  used on input line 153.
+Package pdftex.def Info: ../pics/grid1.png  used on input line 154.
 (pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
-<../pics/grid2_1.png, id=115, 626.34pt x 171.64125pt>
+<../pics/grid2_1.png, id=130, 626.34pt x 171.64125pt>
 File: ../pics/grid2_1.png Graphic file (type png)
 <use ../pics/grid2_1.png>
-Package pdftex.def Info: ../pics/grid2_1.png  used on input line 153.
+Package pdftex.def Info: ../pics/grid2_1.png  used on input line 154.
 (pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
-<../pics/grid2_2.png, id=116, 626.34pt x 171.64125pt>
+<../pics/grid2_2.png, id=131, 626.34pt x 171.64125pt>
 File: ../pics/grid2_2.png Graphic file (type png)
 <use ../pics/grid2_2.png>
-Package pdftex.def Info: ../pics/grid2_2.png  used on input line 153.
+Package pdftex.def Info: ../pics/grid2_2.png  used on input line 154.
 (pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
-<../pics/grid2_3.png, id=117, 626.34pt x 171.64125pt>
+<../pics/grid2_3.png, id=132, 626.34pt x 171.64125pt>
 File: ../pics/grid2_3.png Graphic file (type png)
 <use ../pics/grid2_3.png>
-Package pdftex.def Info: ../pics/grid2_3.png  used on input line 154.
+Package pdftex.def Info: ../pics/grid2_3.png  used on input line 155.
 (pdftex.def)             Requested size: 125.26578pt x 34.32764pt.
-<../pics/b.png, id=118, 571.13374pt x 343.2825pt>
+<../pics/b.png, id=133, 571.13374pt x 343.2825pt>
 File: ../pics/b.png Graphic file (type png)
 <use ../pics/b.png>
-Package pdftex.def Info: ../pics/b.png  used on input line 166.
+Package pdftex.def Info: ../pics/b.png  used on input line 167.
 (pdftex.def)             Requested size: 114.22472pt x 68.65527pt.
-<../pics/b2.png, id=119, 571.13374pt x 343.2825pt>
+<../pics/b2.png, id=134, 571.13374pt x 343.2825pt>
 File: ../pics/b2.png Graphic file (type png)
 <use ../pics/b2.png>
-Package pdftex.def Info: ../pics/b2.png  used on input line 166.
+Package pdftex.def Info: ../pics/b2.png  used on input line 167.
 (pdftex.def)             Requested size: 114.22472pt x 68.65527pt.
-<../pics/b3.png, id=120, 912.40875pt x 398.48875pt>
+<../pics/b3.png, id=135, 912.40875pt x 398.48875pt>
 File: ../pics/b3.png Graphic file (type png)
 <use ../pics/b3.png>
-Package pdftex.def Info: ../pics/b3.png  used on input line 182.
+Package pdftex.def Info: ../pics/b3.png  used on input line 183.
 (pdftex.def)             Requested size: 182.47852pt x 79.69633pt.
  [4 <../pics/grid2_1.png> <../pics/grid2_2.png> <../pics/grid2_3.png> <../pics/
 b.png> <../pics/b2.png> <../pics/b3.png>]
+<../pics/1_3.png, id=147, 398.48875pt x 285.065pt>
+File: ../pics/1_3.png Graphic file (type png)
+<use ../pics/1_3.png>
+Package pdftex.def Info: ../pics/1_3.png  used on input line 220.
+(pdftex.def)             Requested size: 79.69633pt x 57.01198pt.
+<../pics/1_31.png, id=148, 740.7675pt x 398.48875pt>
+File: ../pics/1_31.png Graphic file (type png)
+<use ../pics/1_31.png>
+Package pdftex.def Info: ../pics/1_31.png  used on input line 225.
+(pdftex.def)             Requested size: 148.15086pt x 79.69633pt.
+File: ../pics/b.png Graphic file (type png)
+<use ../pics/b.png>
+Package pdftex.def Info: ../pics/b.png  used on input line 229.
+(pdftex.def)             Requested size: 114.22472pt x 68.65527pt.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 220.
+(hyperref)                removing `math shift' on input line 233.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 220.
+(hyperref)                removing `subscript' on input line 233.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 220.
+(hyperref)                removing `math shift' on input line 233.
 
-<../pics/2.png, id=132, 57.21375pt x 57.21375pt>
+<../pics/2.png, id=149, 57.21375pt x 57.21375pt>
 File: ../pics/2.png Graphic file (type png)
 <use ../pics/2.png>
-Package pdftex.def Info: ../pics/2.png  used on input line 224.
+Package pdftex.def Info: ../pics/2.png  used on input line 237.
 (pdftex.def)             Requested size: 11.44254pt x 11.44254pt.
-<../pics/2_2.png, id=133, 57.21375pt x 171.64125pt>
+<../pics/2_2.png, id=150, 57.21375pt x 171.64125pt>
 File: ../pics/2_2.png Graphic file (type png)
 <use ../pics/2_2.png>
-Package pdftex.def Info: ../pics/2_2.png  used on input line 224.
+Package pdftex.def Info: ../pics/2_2.png  used on input line 237.
 (pdftex.def)             Requested size: 11.44254pt x 34.32764pt.
-<../pics/2_3.png, id=134, 57.21375pt x 285.065pt>
+<../pics/2_3.png, id=151, 57.21375pt x 285.065pt>
 File: ../pics/2_3.png Graphic file (type png)
 <use ../pics/2_3.png>
-Package pdftex.def Info: ../pics/2_3.png  used on input line 224.
+Package pdftex.def Info: ../pics/2_3.png  used on input line 237.
 (pdftex.def)             Requested size: 11.44254pt x 57.01198pt.
-<../pics/2_4.png, id=135, 171.64125pt x 171.64125pt>
+<../pics/2_4.png, id=152, 171.64125pt x 171.64125pt>
 File: ../pics/2_4.png Graphic file (type png)
 <use ../pics/2_4.png>
-Package pdftex.def Info: ../pics/2_4.png  used on input line 224.
+Package pdftex.def Info: ../pics/2_4.png  used on input line 237.
 (pdftex.def)             Requested size: 34.32764pt x 34.32764pt.
-<../pics/2_5.png, id=136, 57.21375pt x 512.91624pt>
+<../pics/2_5.png, id=153, 57.21375pt x 512.91624pt>
 File: ../pics/2_5.png Graphic file (type png)
 <use ../pics/2_5.png>
-Package pdftex.def Info: ../pics/2_5.png  used on input line 224.
+Package pdftex.def Info: ../pics/2_5.png  used on input line 237.
 (pdftex.def)             Requested size: 11.44254pt x 102.58142pt.
-[5 <../pics/2.png> <../pics/2_2.png> <../pics/2_3.png> <../pics/2_4.png> <../pi
-cs/2_5.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 234.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
+[5 <../pics/1_3.png> <../pics/1_31.png>]
+<../pics/2_6.png, id=160, 569.12625pt x 342.27875pt>
+File: ../pics/2_6.png Graphic file (type png)
+<use ../pics/2_6.png>
+Package pdftex.def Info: ../pics/2_6.png  used on input line 250.
+(pdftex.def)             Requested size: 170.73918pt x 102.6844pt.
+<../pics/2_61.png, id=161, 569.12625pt x 342.27875pt>
+File: ../pics/2_61.png Graphic file (type png)
+<use ../pics/2_61.png>
+Package pdftex.def Info: ../pics/2_61.png  used on input line 251.
+(pdftex.def)             Requested size: 170.73918pt x 102.6844pt.
+<../pics/2_62.png, id=162, 569.12625pt x 342.27875pt>
+File: ../pics/2_62.png Graphic file (type png)
+<use ../pics/2_62.png>
+Package pdftex.def Info: ../pics/2_62.png  used on input line 252.
+(pdftex.def)             Requested size: 170.73918pt x 102.6844pt.
+ [6 <../pics/2.png> <../pics/2_2.png> <../pics/2_3.png> <../pics/2_4.png> <../p
+ics/2_5.png> <../pics/2_6.png> <../pics/2_61.png> <../pics/2_62.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\prime' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\prime' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 283.
+
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 291.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 291.
  (./Problem.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 234.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 234.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 291.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 291.
 Package rerunfilecheck Info: File `Problem.out' has not changed.
-(rerunfilecheck)             Checksum: B27E7065035A3E7A301969D5E0102A3A;882.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
+(rerunfilecheck)             Checksum: 9589EF168A03BD4195F9CCB2107E0EDD;1179.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 291.
  ) 
 Here is how much of TeX's memory you used:
- 36046 strings out of 492982
- 689943 string characters out of 6134895
- 865745 words of memory out of 5000000
- 39076 multiletter control sequences out of 15000+600000
+ 36084 strings out of 492982
+ 690500 string characters out of 6134895
+ 866775 words of memory out of 5000000
+ 39100 multiletter control sequences out of 15000+600000
  550172 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,12n,101p,10567b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1762,10 +1826,10 @@ lic/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx144
 xmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/publ
 ic/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200
 .pfb>
-Output written on Problem.pdf (5 pages, 425500 bytes).
+Output written on Problem.pdf (7 pages, 527240 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 277 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 248 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 326 words of extra memory for PDF output out of 10000 (max. 10000000)
 

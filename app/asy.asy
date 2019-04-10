@@ -1,5 +1,6 @@
 settings.outformat ="png";
-unitsize(2cm);
+unitsize(4cm);
+defaultpen(fontsize(17pt));
 
 import graph;
 void vertex(int n, int m, pen c){
@@ -13,15 +14,22 @@ void grid(int n, int m){
         }
     }
     for (int i = 0; i<n; ++i){
+        if (i==1){continue;}
         for (int j = 0; j<m-1; ++j){
             draw((2*i, 2*j+1/2) -- (2*i, 2*j + 3/2), linewidth(2));
         }
     }
 }
 
-vertex(0, 0, red);
-vertex(0, 1, red);
-vertex(0, 2, blue);
-vertex(0, 3, blue);
-vertex(0, 4, blue);
-grid(1, 5);
+usepackage("amsmath");
+usepackage("amssymb");
+label("$\left\lceil \dfrac{n-6}{3} \right\rceil$", (0, 0));
+label("$\left\lceil \dfrac{n-6}{3} \right\rceil$", (2, 2));
+label("$\left\lceil \dfrac{n-6}{3} \right\rceil$", (4, 0));
+vertex(0, 0, paleblue);
+vertex(0, 1, paleblue);
+vertex(1, 0, paleblue);
+vertex(1, 1, palered);
+vertex(2, 0, palered);
+vertex(2, 1, palered);
+grid(3, 2);
