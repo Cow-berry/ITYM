@@ -120,7 +120,7 @@ end of the game.
 \subsection{Tree} $G$ is a tree. Let's define weight for each vertex as following:
 	
 	\begin{Def}
-		Let $S_v$ be a set of trees that was produced by removing vertex $v\in G$ off the tree
+		Let $S_v$ be a set of trees that was produced by removing vertex $v\in G$ from the tree
 		
 		Weight of vertex $v$ is $w_v = \max\limits_{s\in S}|s|$
 	\end{Def}
@@ -142,7 +142,7 @@ end of the game.
 		\end{tabular}		
 		
 		\begin{Def}
-			Let \textbf{center line} be a shortest line that is places in-between two edges of the grid, e.g. the following grid has two of them (highlighted vertical lines). 
+			Let \textbf{center line} be a shortest line that is placed in-between two edges of the grid, e.g. the following grid has two of them (colored vertical lines). 
 			
 			\gr{grid4}
 		\end{Def}		
@@ -154,7 +154,7 @@ end of the game.
 			\gr{grid2_3}
 		\end{tabular}
 		
-		horizontal lines in the previous example could be center lines, but first move on them does not guarantee an optimal number of blue vertices.
+		horizontal lines in the previous example could be center lines, but first move on them does not guarantee the optimal number of blue vertices.
 		
 		Therefore, in this case $B(G) = min(M, K) \cdot \dfrac{max(M, K)}{2}$, where $max(M, K)$ is even
 		\item K is odd.
@@ -210,7 +210,12 @@ don't.
 	
 \subsection{Torus Grid}
 
-Since all vertices on a blank torus grid are completely identical Bob can start his game with any vertex.  
+Since all vertices on a blank torus grid are completely identical Bob can start his game with any vertex.
+
+Let's consider the same cases. Suppose that $G$ is a torus grid $M\times K$, where $M\leqslant K$:
+\begin{itemize}
+	\item $K$ is even
+\end{itemize}  
 \end{document}
 
 
