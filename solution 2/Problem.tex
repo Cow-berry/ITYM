@@ -90,35 +90,35 @@
 	\pagebreak
 	
 \section*{Introduction}
-The main point of this problem is game theory.
+The main point of this problem is the game theory.
 
-In this case, game is played on an undirected graph with all vertices colored in white. Two payers, Bob and Riley, make alternating moves starting with Bob. On his first move, each player chooses
+In this case, the game is played on an undirected graph with all vertices colored in white. Two players, Bob and Riley, make alternating moves starting with Bob. On his first move, each player chooses
 any white vertex and colors it in his favourite color. On each consequent move, each player picks
-a white vertex connected with an edge to a vertex of his color (if there is no such vertex, the
+a white vertex connected by its edge to a vertex of his color (if there is no such vertex, the
 player skips his move). Then he colors it in his color. The game finishes when no white vertices
 remain.
 
 \begin{Def}
 	$G$ is an undirected Graph
 
-	Let $B(G)$ be the maximal number of blue vertices, which Bob can guarantee at the end of
+	Let $B(G)$ be the maximum number of blue vertices that Bob can guarantee at the end of
 the game.
 
-	Let $R(G)$ be the maximal number of red vertices, which Riley can guarantee at the
+	Let $R(G)$ be the maximum number of red vertices that Riley can guarantee at the
 end of the game.
 \end{Def}
 
 \begin{Def}
-	$M_B(n) = \min\limits_{G\in S(n)}B(G)\quad S(n)$ -- set of all simple undirected connected graphs with n vertices.
+	$M_B(n) = \min\limits_{G\in S(n)}B(G)\quad S(n)$ is the set of all simple undirected connected graphs with n vertices.
 \end{Def}
 
 \begin{Def}
-	$|G|$, where $G$ is undirected graph, equals the number of vertices in $G$
+	$|G|$, where $G$ is an undirected graph, equals the number of vertices in $G$
 \end{Def}
 
 \section{Describe the optimal strategy for Bob and evaluate $B(G)$ where:}
 
-\subsection{Tree} $G$ is a tree. Let's define weight for each vertex as following:
+\subsection{Tree} $G$ is a tree. Let's define the weight for each vertex as follows:
 	
 	\begin{Def}
 		Let $S_v$ be a set of trees that was produced by removing vertex $v\in G$ from the tree
@@ -126,15 +126,15 @@ end of the game.
 		Weight of vertex $v$ is $w_v = \max\limits_{s\in S}|s|$
 	\end{Def}
 	
-	Now, let's take a look at Bob's first move. By choosing one vertex to color, he divides the tree into several subtrees. For Riley it's only possible to color one of these subtrees, because once he chooses one of these subtrees he can't 'move' to another one, because it's a tree and the only way goes through the vertex chosen by Bob. 
+	Now, let's take a look at Bob's first move. By choosing one vertex to color, he divides the tree into several subtrees. For Riley it's only possible to color one of these subtrees, because once he chooses one of these subtrees he can't 'move' to another one, since it's a tree and the only way goes through the vertex chosen by Bob. 
 	
-	So Riley chooses the subtree with the maximal number of vertices. And all the other subtrees goes to Bob.
+	So Riley chooses the subtree with the maximal number of vertices. And all the other subtrees go to Bob.
 	
-	Thus, for Bob, it's beneficial to choose the vertex with the least weight for first move. 
+	Thus, for Bob, it's beneficial to choose the vertex with the smallest weight for the first move. 
 	
-	Because Riley 'takes' the subtree with the maximal number of vertices, $$B(G) = |G| - \min\limits_{v\in G} w_v$$
+	Because Riley 'takes' the subtree with the maximum number of vertices, $$B(G) = |G| - \min\limits_{v\in G} w_v$$
 	
-\subsection{Grid} $G$ is a grid $M\times K$. Let $M\leqslant K$. Then let's take a look at two different case:
+\subsection{Grid} $G$ is a grid $M\times K$. Let $M\leqslant K$. Then let's take a look at two different cases:
 	\begin{itemize}
 		\item K is even. Then we can split the grid into two equal parts the following way:\\
 		\begin{tabular}{CCCCCC}
@@ -143,36 +143,36 @@ end of the game.
 		\end{tabular}		
 		
 		\begin{Def}
-			Let \textbf{center line} be a shortest line that is placed in-between two edges of the grid, e.g. the following grid has two of them (colored vertical lines). 
+			Let the \textbf{center lines} be the shortest lines that are placed in-between two edges of the grid, e.g. the following grid has two of them (colored vertical lines). 
 			
 			\gr{grid4}
 		\end{Def}		
 		
-		Here appears invisible line splitting the grid in half. Bob's first move must be some vertex on a center line, because either way Riley can border the grid like shown on the next pictures:
+		Here appears the invisible line splitting the grid in half. Bob's first move must be some vertex on a center line, because either way Riley can border the grid as shown on the next pictures:
 		
 		\begin{tabular}{CCCCCC}
 			\gr{grid1} & \rightarrow & \gr{grid2_1} & \rightarrow & \gr{grid2_2.png} & \rightarrow\\
 			\gr{grid2_3}
 		\end{tabular}
 		
-		horizontal lines in the previous example could be center lines, but first move on them does not guarantee the optimal number of blue vertices.
+		the horizontal lines in the previous example could be center lines, but the first move on them does not guarantee the optimal number of blue vertices.
 		
 		Therefore, in this case $B(G) = min(M, K) \cdot \dfrac{max(M, K)}{2}$, where $max(M, K)$ is even
 		\item K is odd.
 		
 		\begin{itemize}
-			\item M is odd. Then there's a center vertex. Bob's first move must be this vertex, i'll explain later why. We can draw four lines that border the grid into parts that include the vertex and the parts that 
+			\item M is odd. Then there's a center vertex. Bob's first move must be this vertex, I'll explain later why. We can draw four lines that separate the grid into parts that include the vertex and the parts that 
 don't.
 
 			\gr{b} \hfill \gr{b2}
 
 			By acting symmetrically Riley can border one of these areas. We know that $M~and~K$ are odd, then $\exists m, k: M = 2m+1\quad K = 2k+1$. 
 			
-			Areas of the areas are $(2m+1)\cdot (k+1) ~~\&~~ (2k+1)\cdot (m+1)$, i.e. $2mk+k + 2m + 1~~\&~~ 2mk + m + 2k + 1$. 
+			The areas of the areas are $(2m+1)\cdot (k+1) ~~\&~~ (2k+1)\cdot (m+1)$, i.e. $2mk+k + 2m + 1~~\&~~ 2mk + m + 2k + 1$. 
 			
 			$M\leqslant K\Rightarrow m\leqslant k\Rightarrow m + 2mk + m + k + 1\leqslant  k + 2mk + m + k\Rightarrow $
 			
-			$\Rightarrow (2m+1)(k+1)\leqslant (2k+1)(m+1)$, so Riley will choose to take one of  $2mk + k$ areas. 
+			$\Rightarrow (2m+1)(k+1)\leqslant (2k+1)(m+1)$, so Riley will choose to take one of the $2mk + k$ areas. 
 			
 			if first Bob's move was not the central vertex, then several areas would expand, increasing the gain of Riley.
 			
@@ -207,15 +207,15 @@ don't.
 		\end{itemize}		 
 	\end{itemize}
 	
-	We can conclude, that $B(G) = min\left( \ceil{\dfrac{M}{2}}\cdot K~M\cdot \ceil{\dfrac{K}{2}}\right)$
+	We can conclude that $B(G) = min\left( \ceil{\dfrac{M}{2}}\cdot K~M\cdot \ceil{\dfrac{K}{2}}\right)$
 	
 \subsection{Torus Grid}
 
-Since all vertices on a blank torus grid are completely identical Bob can start his game with any vertex.
+Since all vertices on a blank torus grid are completely identical, Bob can start his game with any vertex.
 
 Let's consider the same cases. Suppose that $G$ is a torus grid $M\times K$, where $M\leqslant K$:
 \begin{itemize}
-	\item $K$ is even. Then there're two center lines. We can draw an invisible splitting line between them. Riley can make his moves symmetrically to Bob's moves. So Riley can guarantee that he will get at least half of the grid. So it's maximum that Bob can get. $B(G) = M\cdot \dfrac{K}{2}$
+	\item $K$ is even. Then there're two center lines. We can draw an invisible splitting line between them. Riley can make his moves symmetrically to Bob's moves. So Riley can guarantee that he will get at least half of the grid. So it's the maximum that Bob can get. $B(G) = M\cdot \dfrac{K}{2}$
 	
 	\gr{1_3}
 	\item $K$ is odd
@@ -223,8 +223,8 @@ Let's consider the same cases. Suppose that $G$ is a torus grid $M\times K$, whe
 		\item $M$ is even. Then there's a line splitting the grid into two equal halves. And again Riley can act symmetrically
 		
 		\gr{1_31}
-		\item $M$ is odd. There's a center vertex. Bob can start from it. As in Grid case we can draw four lines for symmetry
-		Riley can act symmetrically again, but there's a line that symmetries to itself. If they will do their best to save their half and at the same time get that self-symmetrised line, they will split the graph with $\ceil{\dfrac{n}{2}}\to$ Bob and $\floor{\dfrac{n}{2}}\to$ Riley.
+		\item $M$ is odd. There's a center vertex. Bob can start from it. As well as in the Grid case, we can draw four lines for symmetry.
+		Riley can act symmetrically again, but there's a line that is symmetrical to itself. If they do their best to save their half and at the same time get that self-symmetrical line, they will split the graph with $\ceil{\dfrac{n}{2}}\to$ Bob and $\floor{\dfrac{n}{2}}\to$ Riley.
 		
 		\gr{b} 
 	\end{itemize}
@@ -239,12 +239,14 @@ Let's first consider $1\leqslant n\leqslant 5:$
 \begin{enumerate}
 	\item [$n=1$] there's only one 1-vertexed graph and $B(G) = 1$, so $M_B(n) = 1$
 	\item [$n=2$] $M_B(n) = 1$
-	\item [$n=3$] $M_B(G) = 2$. if all vertices are connected, then Bob can color any vertex for first move. Riley choose any of the left ones and Bob colors third one. In cases where two vertices are not linked there's a center vertex for Bob's first move and Riley can get only one of the remaining. And finally bob colors another one. So $B(G) = 2$ for all cases.
-	\item [$n=4$] $M_B(G) = 2$. You can't make $B(G)$ be 1, because always exists vertex with two connections. Riley can 'block' one but not all two, so $B(G)\geqslant 2\Rightarrow M_B(n) = 2$
-	\item [$n=5$] $M_B(G) = 3$.  It simply can be shown that there's no 5-vertexed graph with $B(G)<3$
+	\item [$n=3$] $M_B(G) = 2$. if all vertices are connected, then Bob can color any vertex for the first move. Riley chooses any of the left ones and Bob colors the third one. In cases where two vertices are not linked, there's a center vertex for Bob's first move and Riley can get only one of the remaining. And finally, bob colors another one. So $B(G) = 2$ for all cases.
+	\item [$n=4$] $M_B(G) = 2$. You can't make $B(G)$ be 1, because there always exists a vertex with two connections. Riley can 'block' one but not all two, so $B(G)\geqslant 2\Rightarrow M_B(n) = 2$
+	\item [$n=5$] $M_B(G) = 3$.  It can be easily shown that there's no 5-vertexed graph with $B(G)<3$
 \end{enumerate}
 
-for the following $n$-s let's consider these three graphs (numbers on vertices means number of invisible vertices that are connected only with this vertex):
+\subsection{Upper bounds}
+
+for the following $n$-s let's consider these three graphs (the numbers on vertices mean the number of invisible vertices that are connected only with this vertex):
 
 $\begin{cases}
 	n=3k&\Gr{2_6}\\
@@ -263,30 +265,40 @@ Therefore: $\begin{cases}
 	M_B(n)\leqslant \ceil{\dfrac{n}{3}}, n\geqslant 6\\
 		
 \end{cases}$
-
-\section{}
+\subsection{Lower bounds}
+\section{Upper and lower bounds for $\lim\limits_{n\to\infty}\dfrac{M_B(n)}{n}$} To Be Done
 \section*{New Rules}
-For the next 3 problems consider the following modification of the game rules. Instead of
-choosing which vertices to color, each of the players has a pawn (blue for Bob and red for Riley),
-which can move from vertex to vertex connected with an edge. Pawn can't step on a vertex with the opposite color. Pawn can step back on a vertex colored in its color.
+For the next 3 problems, consider the following modification of the game rules. Instead of
+choosing which vertices to color, each of the players has a pawn (blue for Bob and red for Riley)
+that can move from vertex to vertex connected with an edge. A pawn can't step on a vertex with the opposite color. A pawn can step back on a vertex colored in its color.
 
 Since the game (with the new rules) can continue indefinitely, for this case let $\p B (G)$ be the
-maximal number of blue vertices Bob can guarantee in a finite amount of moves and $\p R (G)$ be
-the maximal number of red vertices Riley can guarantee in a finite amount of moves.
+maximal number of blue vertices Bob can guarantee in a finite amount of moves, and $\p R (G)$ be
+the maximum number of red vertices Riley can guarantee in a finite amount of moves.
 
-Other rules are the same:
+The other rules are the same:
 \begin{enumerate}
-	\item 1st move -- any white vertex
-	\item there's no white vertices -- end of the game
-	\item you must step somewhere on your move unless there are no possible moves
+	\item the first move can be any white vertex
+	\item if there's no white vertices it's the end of the game
+	\item you must step somewhere during your move unless there are no possible moves
 \end{enumerate}	
 \section{Value of $\p B(G) $ and $\p R(G)$}
 \subsection{Grid}
 Let $G$ be a grid $M\times K$.
 
 \begin{itemize}
-	\item $M$ is even or $K$ is even. Grid can be split into two halves by drawing a certain line. Then Riley can guarantee at least half for him by moving symmetrically, so it's maximal gain possible for Bob. $B(G) = \dfrac{MK}{2}$
-	\item $M$ and $K$ are both odd.
+	\item $M$ is even or $K$ is even. The grid can be split into two halves by drawing a certain line. Then Riley can guarantee at least a half for him by moving symmetrically, so it's the maximum gain possible for Bob. $B(G) = \dfrac{M\cdot K}{2} = \ceil{\dfrac{M\cdot K}{2}}$
+	\item $M$ and $K$ are both odd. Then there's a central vertex. If Bob's 1st move is not the central vertex, he gets less than a half. If he makes his first move right, he gets $\ceil{\dfrac{|G|}{2}} = \ceil{\dfrac{M\cdot K}{2}}$ (considering the case where both players make their moves to their benefit).
+\end{itemize}
+
+Therefore $B(G) = \ceil{\dfrac{M\cdot K}{2}}$
+
+\subsection{Torus Grid}
+Let $G$ be a torus grid $M\times K$
+
+\begin{itemize}
+	\item $M$ is even or $K$ is even. Then they can step symmetrically like in (4.1). And with the same reasons $B(G) = \dfrac{M\cdot K}{2} = \ceil{\dfrac{M\cdot K}{2}}$
+	\item $M$ and $K$ are both odd. 
 \end{itemize}
 \end{document}
 
